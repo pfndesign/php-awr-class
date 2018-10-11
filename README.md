@@ -1,4 +1,4 @@
-# php-awr-class : advance arabic word and quran tajwid processor
+# php-awr-class : advance quran tajwid processor
 awr is an advance wordprocessor/rulemaking for the Arabic language especially used for apply/showing Quran tajwid rules in real-time
 online demo :
 
