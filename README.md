@@ -2,6 +2,8 @@
 php awr class : advance arabic word and quran tajwid processor
 awr is an advance wordprocessor/rulemaking for the Arabic language especially used for apply/showing Quran tajwid rules in real-time
 online demo :
+
+
 [rokhan](http://rokhan.ir)
 
 ## how is this works :
