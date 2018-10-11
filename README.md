@@ -83,7 +83,7 @@ wordrule_applyer($wordkey, $key, $tag, $words, $attachedby=false, $followedby=fa
 ### what is wordrule_applyer:
 
 wordrule_applyer is a function that used to make custom logical rules based on character positions to each other
-
+```php
 /**
      * [wordrule_applyer description]
      * applying/checking the word rules for characters
@@ -98,5 +98,5 @@ wordrule_applyer is a function that used to make custom logical rules based on c
      * @param  boolean $erab_flag        [description] true if you don't want to use alef as erab
      * @return [type]                    [description] if the rule applies for character
      */
-
+```
 
