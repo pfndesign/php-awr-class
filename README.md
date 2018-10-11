@@ -1,5 +1,5 @@
 # php-awr-class
-php awr class :  advance arabic word and quran tajwid processor
+php awr class : advance arabic word and quran tajwid processor
 awr is an advance wordprocessor/rulemaking for the Arabic language especially used for apply/showing Quran tajwid rules in real-time
 online demo :
 [rokhan](http://rokhan.ir)
@@ -72,31 +72,3 @@ $awr->render($tag,$return);
 $tag can be used to change the "n" in <n> tag
 
 $return can be used to switch between echo and return
-
-## making custom rules :
-
-you can use "wordrule_applyer" function in order to make a custom rules
-
-```php
-wordrule_applyer($wordkey, $key, $tag, $words, $attachedby=false, $followedby=false, $followedbyattach=false, $lastlettercheck=false, $erab_flag=false)
-```
-### what is wordrule_applyer:
-
-wordrule_applyer is a function that used to make custom logical rules based on character positions to each other
-```php
-/**
-     * [wordrule_applyer description]
-     * applying/checking the word rules for characters
-     * @param  [type]  $wordkey          [description] the position of the character in array / row
-     * @param  [type]  $key              [description] the position of the character in array / column
-     * @param  [type]  $tag              [description] rule flag name
-     * @param  [type]  $words            [description] array of charecters
-     * @param  boolean $attachedby       [description] false or array of characters that must be attached to $words
-     * @param  boolean $followedby       [description] false or array of characters that must be followed by $words / $attachedby if not false
-     * @param  boolean $followedbyattach [description] false or array of characters that must be attached to $followedby if not false
-     * @param  boolean $lastlettercheck  [description] false or check if the previous rules are for a character at end of the text
-     * @param  boolean $erab_flag        [description] true if you don't want to use alef as erab
-     * @return [type]                    [description] if the rule applies for character
-     */
-```
-
