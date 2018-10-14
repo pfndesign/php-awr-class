@@ -532,8 +532,8 @@ class awr_process
         $sukon = array("\u0652");
         $rule1 = $this->wordrule_applyer($key1, $key2, "ikhfaa", $erabha, $theseletter);
         $rule2 = $this->wordrule_applyer($key1, $key2, "ikhfaa", $n, $sukon, $theseletter);
-        $rule2 = $this->wordrule_applyer($key1, $key2, "ikhfaa", $m, $sukon, $b);
-        $rule1 = $this->wordrule_applyer($key1, $key2, "ikhfaa", $erabha, array("erab"), $theseletter);
+        $rule3 = $this->wordrule_applyer($key1, $key2, "ikhfaa", $m, $sukon, $b);
+        $rule4 = $this->wordrule_applyer($key1, $key2, "ikhfaa", $erabha, array("erab"), $theseletter);
         /*
         some of Quran surah that I checked manually for this filter :
         falaq,masadd:3,kafiroon,maun,quraish:4,fil:4,baqare:17,10
