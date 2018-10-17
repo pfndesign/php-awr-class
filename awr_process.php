@@ -668,7 +668,8 @@ class awr_process
     {
         foreach ($this->text as $key1 => $parts) {
             for ($key2 = count($parts) - 1; $key2 >= 0; $key2--) {
-                if ($this->erab($this->text[$key1][$key2]['char'])) {
+                //fix deleting alef in first letter
+               if ((key2==0 && $this->erab($this->text[$key1][$key2]['char'])) && $this->erab($this->text[$key1][$key2]['char'],true)) || (key2 != 0 && $this->erab($this->text[$key1][$key2]['char']))){
                     if (isset($this->text[$key1][$key2 - 1])) {
                         $this->text[$key1][$key2 - 1]['word'] = $this->text[$key1][$key2 - 1]['word'] . $this->text[$key1][$key2]['word'];
                     }
