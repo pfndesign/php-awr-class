@@ -604,7 +604,9 @@
 					// if laa letter
 					if($laaletter) {
 						// mark characters to delete with false
-						$chardata2[($charAL[($x-1)]['i'])]['char'] = false;
+						//fixing "la" word
+						$chardata2[$i]['char'] = 65166;
+						//$chardata2[($charAL[($x-1)]['i'])]['char'] = false;
 					}
 				} // end if AL (Arabic Letter)
 			} // end for each char
